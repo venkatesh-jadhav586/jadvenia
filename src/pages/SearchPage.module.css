@@ -1,0 +1,189 @@
+.page { min-height: 100vh; }
+
+.searchBar {
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+}
+.searchInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 9px;
+  padding: 0.5rem 0.875rem;
+  background: #f7f8f6;
+}
+.searchInput {
+  border: none;
+  background: none;
+  font-size: 0.875rem;
+  color: #1a1a18;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+}
+.searchInput::placeholder { color: #B4B2A9; }
+.select {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 9px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8rem;
+  background: #f7f8f6;
+  color: #1a1a18;
+  font-family: 'DM Sans', sans-serif;
+}
+.filterToggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 9px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: #fff;
+  color: #1a1a18;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+.filterToggle:hover { background: #f1efe8; }
+.filterCount {
+  background: #1D9E75;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Body layout */
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+  position: sticky;
+  top: 130px;
+}
+.sidebarTitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1a1a18;
+  margin-bottom: 1.25rem;
+}
+.filterSection { margin-bottom: 1.25rem; }
+.filterLabel { font-size: 0.75rem; font-weight: 500; color: #5F5E5A; margin-bottom: 0.5rem; }
+.filterChips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  color: #5F5E5A;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+.chip:hover { border-color: #1D9E75; color: #1D9E75; }
+.chipActive { background: #1D9E75; color: #fff; border-color: #1D9E75; }
+.rangeLabels { display: flex; justify-content: space-between; font-size: 0.68rem; color: #888780; margin-top: 4px; }
+.checkRow { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.checkLabel { font-size: 0.8rem; color: #5F5E5A; }
+.clearBtn {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: #888780;
+  background: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 0.5rem;
+}
+.clearBtn:hover { border-color: #E24B4A; color: #E24B4A; }
+
+/* Results */
+.results { }
+.resultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.resultsCount { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; color: #1a1a18; }
+.activeTags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.activeTag {
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: #E1F5EE;
+  color: #0F6E56;
+}
+.sortSelect {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.78rem;
+  background: #fff;
+  color: #1a1a18;
+  font-family: 'DM Sans', sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #888780;
+}
+.empty p:first-child { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.emptyTitle { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; color: #1a1a18; margin-bottom: 0.5rem; }
+.emptySub { font-size: 0.875rem; margin-bottom: 1.25rem; }
+
+@media (max-width: 900px) {
+  .body { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+    display: none;
+  }
+  .sidebarOpen {
+    display: block;
+  }
+}

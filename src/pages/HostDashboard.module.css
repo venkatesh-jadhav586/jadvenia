@@ -1,0 +1,58 @@
+.page { padding: 2.5rem 0 5rem; min-height: 100vh; }
+.container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+.authWall { text-align: center; padding: 5rem; color: #888780; }
+.authLink { color: #1D9E75; font-weight: 500; }
+
+.pageHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.75rem; flex-wrap: wrap; gap: 1rem; }
+.pageTitle { font-family: 'Syne', sans-serif; font-size: 1.75rem; font-weight: 800; color: #1a1a18; letter-spacing: -0.5px; }
+.pageSub { font-size: 0.875rem; color: #888780; margin-top: 4px; }
+
+.addBtn { display: flex; align-items: center; gap: 6px; background: #1D9E75; color: #fff; border: none; border-radius: 9px; padding: 0.5rem 1.125rem; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.8rem; cursor: pointer; transition: background 0.15s; }
+.addBtn:hover { background: #0F6E56; }
+
+.summaryGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.75rem; }
+.summaryCard { background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 1.25rem; display: flex; flex-direction: column; gap: 4px; }
+.summaryNum { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: #1D9E75; }
+.summaryLabel { font-size: 0.72rem; color: #888780; }
+
+.tabs { display: flex; gap: 6px; margin-bottom: 1.25rem; }
+.tab { padding: 0.375rem 0.875rem; border-radius: 99px; font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(0,0,0,0.1); background: #fff; color: #5F5E5A; cursor: pointer; transition: all 0.15s; font-family: 'DM Sans', sans-serif; }
+.tab:hover { border-color: #1D9E75; color: #1D9E75; }
+.tabActive { background: #1D9E75; color: #fff; border-color: #1D9E75; }
+
+.listingsList { display: flex; flex-direction: column; gap: 10px; }
+.listingRow { display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 1rem 1.25rem; }
+.listingIcon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.375rem; flex-shrink: 0; }
+.listingInfo { flex: 1; }
+.listingTitle { font-weight: 500; font-size: 0.9rem; color: #1a1a18; }
+.listingArea { font-size: 0.72rem; color: #888780; margin-top: 2px; }
+.listingStats { text-align: right; }
+.listingEarning { font-family: 'Syne', sans-serif; font-size: 0.9rem; font-weight: 700; color: #1D9E75; }
+.listingRating { font-size: 0.72rem; color: #EF9F27; font-weight: 500; }
+.statusBadge { font-size: 0.65rem; font-weight: 600; background: #E1F5EE; color: #0F6E56; padding: 3px 8px; border-radius: 99px; }
+.editBtn { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); background: #f7f8f6; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.editBtn:hover { background: #E1F5EE; }
+
+.addCard { display: flex; align-items: center; justify-content: center; gap: 10px; border: 1.5px dashed rgba(0,0,0,0.12); border-radius: 14px; padding: 1.25rem; cursor: pointer; transition: all 0.15s; color: #888780; }
+.addCard:hover { border-color: #1D9E75; color: #1D9E75; }
+.addCardText { font-size: 0.875rem; font-weight: 500; }
+
+.payoutList { display: flex; flex-direction: column; gap: 10px; }
+.payoutSummary { display: flex; align-items: center; gap: 1.5rem; background: #0f2e20; border-radius: 14px; padding: 1.25rem 1.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.payoutStat { }
+.payoutStatNum { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; color: #9FE1CB; }
+.payoutStatLabel { font-size: 0.72rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
+.withdrawBtn { margin-left: auto; background: #1D9E75; color: #fff; border: none; border-radius: 9px; padding: 0.5rem 1.125rem; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.8rem; cursor: pointer; }
+
+.payoutRow { display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 0.875rem 1.25rem; }
+.payoutIcon { font-size: 1.375rem; flex-shrink: 0; }
+.payoutInfo { flex: 1; }
+.payoutTitle { font-size: 0.875rem; font-weight: 500; color: #1a1a18; }
+.payoutDate { font-size: 0.72rem; color: #888780; margin-top: 2px; }
+.payoutRight { text-align: right; }
+.payoutAmt { font-family: 'Syne', sans-serif; font-size: 0.95rem; font-weight: 700; color: #1D9E75; }
+.payoutStatus { font-size: 0.65rem; font-weight: 600; background: #E1F5EE; color: #0F6E56; padding: 2px 7px; border-radius: 99px; }
+
+@media (max-width: 600px) {
+  .summaryGrid { grid-template-columns: repeat(2, 1fr); }
+}
